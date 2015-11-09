@@ -1,0 +1,10 @@
+INSERT INTO tennis.player (player_id, first_name, last_name, email, phone, gender, NTRP_level) VALUES (1, 'Player', 'Player1', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+INSERT INTO tennis.player (player_id, first_name, last_name, email, phone, gender, NTRP_level) VALUES (2, 'Player', 'Player2', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+INSERT INTO tennis.player (player_id, first_name, last_name, email, phone, gender, NTRP_level) VALUES (3, 'Player', 'Player3', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+INSERT INTO tennis.player (player_id, first_name, last_name, email, phone, gender, NTRP_level) VALUES (4, 'Player', 'Player4', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+INSERT INTO tennis.player (player_id, first_name, last_name, email, phone, gender, NTRP_level) VALUES (5, 'Player', 'Player5', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+INSERT INTO tennis.player (player_id, first_name, last_name, email, phone, gender, NTRP_level) VALUES (6, 'Player', 'Player6', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+INSERT INTO tennis.player (player_id, first_name, last_name, email, phone, gender, NTRP_level) VALUES (7, 'Player', 'Player7', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+INSERT INTO tennis.player (player_id, first_name, last_name, email, phone, gender, NTRP_level) VALUES (8, 'Player', 'Player8', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+INSERT INTO tennis.player (player_id, first_name, last_name, email, phone, gender, NTRP_level) VALUES (9, 'Player', 'Player9', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+INSERT INTO tennis.player (player_id, first_name, last_name, email, phone, gender, NTRP_level) VALUES (10, 'Player', 'Player10', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
