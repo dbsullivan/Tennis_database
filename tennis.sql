@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2015 at 10:39 PM
+-- Generation Time: Nov 12, 2015 at 05:05 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -37,7 +37,27 @@ CREATE TABLE IF NOT EXISTS `league` (
   `start_date` date DEFAULT NULL,
   `end_date` date DEFAULT NULL,
   `status` varchar(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+
+--
+-- Dumping data for table `league`
+--
+
+INSERT INTO `league` (`league_id`, `league_name`, `num_player_slots`, `num_courts_needed`, `num_events`, `type_singles_doubles`, `level`, `start_date`, `end_date`, `status`) VALUES
+(1, 'Mens Mon Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(2, 'Mens Tue Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(3, 'Mens Wed Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(4, 'Mens Thu Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(5, 'Mens Fri Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(6, 'Mens Sat Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(7, 'Mens Sun Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(8, 'Womens Mon Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(9, 'Womens Tue Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(10, 'Womens Wed Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(11, 'Womens Thu Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(12, 'Womens Fri Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(13, 'Womens Sat Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(14, 'Womens Sun Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A');
 
 -- --------------------------------------------------------
 
@@ -193,7 +213,7 @@ ALTER TABLE `user_roles`
 -- AUTO_INCREMENT for table `league`
 --
 ALTER TABLE `league`
-MODIFY `league_id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `league_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `league_assignment`
 --
