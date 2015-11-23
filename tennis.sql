@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 12, 2015 at 05:05 AM
+-- Generation Time: Nov 23, 2015 at 01:24 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `league` (
   `start_date` date DEFAULT NULL,
   `end_date` date DEFAULT NULL,
   `status` varchar(1) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
 
 --
 -- Dumping data for table `league`
@@ -57,7 +57,14 @@ INSERT INTO `league` (`league_id`, `league_name`, `num_player_slots`, `num_court
 (11, 'Womens Thu Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
 (12, 'Womens Fri Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
 (13, 'Womens Sat Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
-(14, 'Womens Sun Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A');
+(14, 'Womens Sun Singles', 8, 4, 7, 'Singles', '3.0', NULL, NULL, 'A'),
+(15, 'Mens Test', 0, 0, 0, 'Singles', '4.5', '2015-01-01', '9999-12-31', 'A'),
+(16, 'Women test league', 6, 3, 5, 'Singles', '4.5', '2014-01-01', '2015-12-31', 'I'),
+(17, 'Test League for date checker', 8, 2, 4, 'singles', '3.0', '2015-01-01', '2015-12-31', 'i'),
+(18, 'Test league adding id in jsp for date picker', 8, 4, 7, 'Singles', '4.0', '2015-11-15', '2016-11-30', 'A'),
+(19, 'test radio', 8, 4, 3, 'Singles', '3.5', '2015-11-01', '2015-11-30', 'A'),
+(20, 'shsrhsrz', 8, 4, 3, 'Singles', '3.5', '2015-11-01', '2015-11-30', 'I'),
+(21, 'test', 8, 4, 7, 'Singles', '4.5', '2015-11-01', '2015-11-01', 'A');
 
 -- --------------------------------------------------------
 
@@ -86,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `player` (
   `phone` varchar(15) DEFAULT NULL,
   `gender` varchar(1) DEFAULT NULL,
   `NTRP_level` varchar(5) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `player`
@@ -102,7 +109,13 @@ INSERT INTO `player` (`player_id`, `first_name`, `last_name`, `email`, `phone`, 
 (7, 'Player', 'Player7', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
 (8, 'Player', 'Player8', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
 (9, 'Player', 'Player9', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
-(10, 'Player', 'Player10', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+(10, 'Player', 'Player10', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
+(11, 'updatetest', 'Player', 'e', '2', 'f', '2.0'),
+(12, 'updatetestchanged', 'Player', 'e', '2', 'f', '2.0'),
+(13, 'testme', 'Player', 't', 't', 't', 't'),
+(14, 'testme2', 'Player', 't', 't', 't', 't'),
+(15, 'Test', 'PlayerTest', 't', 't', 't', 't'),
+(16, 'Glen', 'Rivers', 'Glen@email.com', '1', 'm', '1');
 
 -- --------------------------------------------------------
 
@@ -213,7 +226,7 @@ ALTER TABLE `user_roles`
 -- AUTO_INCREMENT for table `league`
 --
 ALTER TABLE `league`
-MODIFY `league_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+MODIFY `league_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT for table `league_assignment`
 --
@@ -223,7 +236,7 @@ MODIFY `league_assign_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `player`
 --
 ALTER TABLE `player`
-MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `player_matches`
 --
