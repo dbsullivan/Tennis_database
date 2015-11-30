@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 -- --------------------------------------------------------
 -- dbs add this
- -- CREATE USER 'tomcat'@'localhost' IDENTIFIED BY 'tomcat'; -- already exists
+ CREATE USER 'tomcat'@'localhost' IDENTIFIED BY 'tomcat'; -- already exists
  GRANT SELECT ON tennis.* TO 'tomcat'@'localhost';
 -- --------------------------------------------------------
 

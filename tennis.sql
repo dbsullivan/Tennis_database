@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2015 at 01:24 AM
+-- Generation Time: Nov 28, 2015 at 09:53 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `league` (
   `start_date` date DEFAULT NULL,
   `end_date` date DEFAULT NULL,
   `status` varchar(1) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
 
 --
 -- Dumping data for table `league`
@@ -64,7 +64,13 @@ INSERT INTO `league` (`league_id`, `league_name`, `num_player_slots`, `num_court
 (18, 'Test league adding id in jsp for date picker', 8, 4, 7, 'Singles', '4.0', '2015-11-15', '2016-11-30', 'A'),
 (19, 'test radio', 8, 4, 3, 'Singles', '3.5', '2015-11-01', '2015-11-30', 'A'),
 (20, 'shsrhsrz', 8, 4, 3, 'Singles', '3.5', '2015-11-01', '2015-11-30', 'I'),
-(21, 'test', 8, 4, 7, 'Singles', '4.5', '2015-11-01', '2015-11-01', 'A');
+(21, 'test', 8, 4, 7, 'Singles', '4.5', '2015-11-01', '2015-11-01', 'A'),
+(22, '', 0, 0, 0, NULL, '', NULL, NULL, ''),
+(23, 'Validation', 8, 4, 7, 'Singles', '3.5', '2015-11-01', '2015-11-30', 'A'),
+(24, 'Another league', 8, 4, 4, 'Doubles', '5.0', '2015-12-01', '2016-11-01', 'A'),
+(25, 'A League', 6, 3, 5, 'Singles', '2.0', '2015-12-01', '2016-02-29', 'A'),
+(26, 'Coverage League Test', 8, 4, 7, 'Singles', '3.0', '2015-01-01', '2015-03-31', 'I'),
+(27, 'Coverage League Test2', 8, 4, 2, 'Singles', '2.0', '2015-11-01', '2015-11-30', 'A');
 
 -- --------------------------------------------------------
 
@@ -93,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `player` (
   `phone` varchar(15) DEFAULT NULL,
   `gender` varchar(1) DEFAULT NULL,
   `NTRP_level` varchar(5) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
 
 --
 -- Dumping data for table `player`
@@ -115,7 +121,15 @@ INSERT INTO `player` (`player_id`, `first_name`, `last_name`, `email`, `phone`, 
 (13, 'testme', 'Player', 't', 't', 't', 't'),
 (14, 'testme2', 'Player', 't', 't', 't', 't'),
 (15, 'Test', 'PlayerTest', 't', 't', 't', 't'),
-(16, 'Glen', 'Rivers', 'Glen@email.com', '1', 'm', '1');
+(16, 'Glen', 'Rivers', 'Glen@email.com', '1', 'm', '1'),
+(17, 'John', 'Me', 'me@u.com', '4141115555', 'M', '4.0'),
+(18, 'Ted', 'Plays', 'ted@y.u', '1111111111', 'M', '3.0'),
+(19, 'Valid', 'Validation', 'test@u.com', '33333333', 'F', '3.5'),
+(20, 'Tammy', 'Badwin', 'tb@g.c', '111111111111', 'F', '2.0'),
+(21, 'PlayerBye', 'PlayerBye', 'dbsullivan@madisoncollege.edu', NULL, NULL, NULL),
+(23, 'Yet ', 'Another', 'Ya@ya.com', '222222222', 'F', '2.0'),
+(24, 'Coverage', 'Test', 'ct@ct.com', '1112223333', 'M', '2.0'),
+(25, 'CoverageTest', 'Again', 'email@test.com', '112222222', 'F', '4.0');
 
 -- --------------------------------------------------------
 
@@ -226,7 +240,7 @@ ALTER TABLE `user_roles`
 -- AUTO_INCREMENT for table `league`
 --
 ALTER TABLE `league`
-MODIFY `league_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
+MODIFY `league_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `league_assignment`
 --
@@ -236,7 +250,7 @@ MODIFY `league_assign_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `player`
 --
 ALTER TABLE `player`
-MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
 --
 -- AUTO_INCREMENT for table `player_matches`
 --
