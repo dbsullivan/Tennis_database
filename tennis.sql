@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 07, 2015 at 01:17 AM
+-- Generation Time: Dec 11, 2015 at 02:39 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `league` (
   `start_date` date DEFAULT NULL,
   `end_date` date DEFAULT NULL,
   `status` varchar(1) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `league`
@@ -57,7 +57,7 @@ INSERT INTO `league` (`league_id`, `league_name`, `num_player_slots`, `num_court
 (11, 'Womens Thu Singles', 8, 4, 7, 'Singles', '3.0', '2015-01-01', '2015-12-31', 'A'),
 (12, 'Womens Fri Singles', 8, 4, 7, 'Singles', '3.0', '2015-01-01', '2015-12-31', 'A'),
 (13, 'Womens Sat Singles', 8, 4, 7, 'Singles', '3.0', '2015-01-01', '2015-12-31', 'A'),
-(14, 'Womens Sun Singles', 8, 4, 7, 'Singles', '3.0', '2015-01-01', '2015-12-31', 'A');
+(14, 'Womens Sun Singles', 8, 4, 7, 'Singles', '2.0', '2015-01-01', '2015-01-25', 'A');
 
 -- --------------------------------------------------------
 
@@ -97,23 +97,23 @@ CREATE TABLE IF NOT EXISTS `player` (
   `phone` varchar(15) DEFAULT NULL,
   `gender` varchar(1) DEFAULT NULL,
   `NTRP_level` varchar(5) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `player`
 --
 
 INSERT INTO `player` (`player_id`, `first_name`, `last_name`, `email`, `phone`, `gender`, `NTRP_level`) VALUES
-(1, 'Player', 'Player1', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
-(2, 'Player', 'Player2', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
-(3, 'Player', 'Player3', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
-(4, 'Player', 'Player4', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
-(5, 'Player', 'Player5', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
-(6, 'Player', 'Player6', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
-(7, 'Player', 'Player7', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
-(8, 'Player', 'Player8', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
-(9, 'Player', 'Player9', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0'),
-(10, 'Player', 'Player10', 'dbsullivan@madisoncollege.edu', '111-22-3333', 'M', '3.0');
+(1, 'Roger', 'Federer', 'player1@email.com', '111-111-1111', 'M', '3.0'),
+(2, 'Rod', 'Laver', 'player2@email.com', '222-222-2222', 'M', '4.0'),
+(3, 'Pete', 'Sampras', 'player3@email.com', '333-333-3333', 'M', '5.0'),
+(4, 'Yannick', 'Noah', 'player4@email.com', '444-444-4444', 'M', '3.5'),
+(5, 'Rafael', 'Nadal', 'player5@email.com', '555-555-5555', 'M', '4.5'),
+(6, 'Martina', 'Navratilova', 'player6@email.com', '666-666-6666', 'F', '3.0'),
+(7, 'Steffi', 'Graf', 'player7@email.com', '777-777-7777', 'F', '4.0'),
+(8, 'Serena', 'Williams', 'player8@email.com', '888-888-8888', 'F', '5.0'),
+(9, 'Venus', 'Williams', 'player9@email.com', '999-999-9999', 'F', '3.5'),
+(10, 'Maria', 'Sharapova', 'player10@email.com', '111-222-3333', 'F', '4.5');
 
 -- --------------------------------------------------------
 
@@ -224,7 +224,7 @@ ALTER TABLE `user_roles`
 -- AUTO_INCREMENT for table `league`
 --
 ALTER TABLE `league`
-MODIFY `league_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
+MODIFY `league_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `league_assignment`
 --
@@ -234,7 +234,7 @@ MODIFY `league_assign_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 -- AUTO_INCREMENT for table `player`
 --
 ALTER TABLE `player`
-MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
+MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `player_matches`
 --
